@@ -1,0 +1,25 @@
+.screen {
+
+  section {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    max-width: 767px;
+    //padding: 0 40px;
+    margin: 0 auto;
+
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    position: relative;
+    z-index: 1;
+  }
+
+}

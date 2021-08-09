@@ -1,0 +1,116 @@
+.screen {
+
+  &__1 {
+
+    &__inner {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      top: 40%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: $offset;
+      right: $offset;
+
+      &-form {
+        display: none;
+        background: url('../images/screen_1_form_background.svg') center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        max-width: 400px;
+        min-height: 200px;
+        margin: 0 auto;
+        position: relative;
+
+        &-inner {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+
+          &-title {
+            font-size: 18px;
+            margin: 0 0 5px 0;
+          }
+          p {
+            font-size: 18px;
+            margin: 0;
+            padding: 0 0 12px 0;
+          }
+          &-btn {
+            border-radius: 5px;
+            border: 2px solid #4f2833;
+            background-color: #dd91b7;
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 28px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #f9f6e1;
+            box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.45);
+
+            &:active, &:visited {
+              color: #f9f6e1;
+            }
+
+            &:hover, &:focus, &:active {
+              border: 2px solid #4f2833;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    &-title {
+      font-size: 25px;
+      font-weight: 700;
+      max-width: 270px;
+      margin: 0 auto;
+    }
+
+    &-text {
+      font-size: 20px;
+      font-weight: 300;
+      display: block;
+      max-width: 200px;
+      margin: 0 auto;
+      padding: 12px 0 0 0;
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
+      padding: 15px 0 0 0;
+    }
+
+    &-button {
+      transition: all 0.25s linear;
+      will-change: transform;
+      animation: rotate 1s linear infinite;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-7px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+    }
+
+  }
+
+}
