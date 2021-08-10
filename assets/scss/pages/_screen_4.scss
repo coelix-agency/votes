@@ -3,13 +3,29 @@
   &__4 {
     background-color: #f9ecd5;
 
-    .screen__image {
-      object-fit: cover;
-      height: auto;
+    &__background {
       width: 100%;
       position: absolute;
       top: 0;
       left: 0;
+    }
+
+    &-toplogo {
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 24px;
+      transform: translateX(-50%);
+    }
+
+    .screen__image {
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
 
     &__inner {
@@ -23,9 +39,11 @@
     &-toptext {
       position: absolute;
       left: 50%;
-      top: 24px;
       transform: translateX(-50%);
+      top: auto;
       z-index: 3;
+      max-width: 25%;
+      bottom: 34%;
     }
 
   }
