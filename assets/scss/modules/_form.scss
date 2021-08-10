@@ -20,7 +20,8 @@
     [type="text"],
     [type="tel"],
     [type="email"],
-    [type="number"] {
+    [type="number"],
+    select {
       background: none;
       background-size: contain;
       height: 30px;
@@ -43,7 +44,8 @@
       [type="text"],
       [type="tel"],
       [type="email"],
-      [type="number"] {
+      [type="number"],
+      select {
         background: url('../images/input_xs.svg') center center no-repeat;
       }
 
@@ -54,7 +56,8 @@
       [type="text"],
       [type="tel"],
       [type="email"],
-      [type="number"] {
+      [type="number"],
+      select {
         background: url('../images/input_md.svg') center center no-repeat;
       }
     }
