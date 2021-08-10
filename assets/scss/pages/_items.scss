@@ -13,8 +13,86 @@
     flex-direction: column;
     width: 33.3%;
     padding: 0 $offset;
-    justify-content: center;
     margin: 0 0 7px 0;
+  }
+
+  &.rounded {
+    > li {
+      .items__item-image-img {
+        position: absolute;
+        width: 73%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 50%;
+        z-index: 11;
+        box-shadow: 7px 7px 18px 0px rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+
+  &.default {
+    > li {
+
+      .items__item {
+
+        &-title {
+          font-weight: 700;
+          padding-top: 7px;
+          display: inline-block;
+          font-size: 8px;
+        }
+
+        &-image {
+          box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.4);
+          border-radius: 22px;
+
+          &-background {
+            bottom: -1px;
+          }
+          &-img {
+            position: absolute;
+            z-index: 3;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            max-height: 75%;
+          }
+        }
+
+        [type="radio"] {
+
+          + .items__item-image {
+            &::after {
+              $size: 11px;
+              $position: 8px;
+
+              content: '';
+              display: block;
+              position: absolute;
+              border: 1px solid #000;
+              z-index: 12;
+              width: $size;
+              height: $size;
+              border-radius: 50%;
+              top: $position;
+              right: $position;
+              background: none;
+              transform: none;
+            }
+          }
+
+          &:checked {
+            + .items__item-image {
+              &::after {
+                background-color: #4f2833;
+              }
+            }
+          }
+        }
+      }
+
+    }
   }
 
   &__item {
@@ -30,14 +108,7 @@
       }
 
       &-img {
-        position: absolute;
-        width: 73%;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        border-radius: 50%;
-        z-index: 11;
-        box-shadow: 7px 7px 18px 0px rgba(0, 0, 0, 0.8);
+
       }
     }
 
@@ -74,6 +145,12 @@
       }
 
     }
+  }
+
+  &__button {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
   }
 
 }

@@ -1,4 +1,17 @@
 .btn {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  color: #f0e9cf;
+  font-size: 13px;
+  font-weight: 700;
+  justify-content: center;
 
+  &__1 {
+    width: 140px;
+    height: 50px;
+    background: url('../images/button_1.svg') center center no-repeat;
+    background-size: contain;
+  }
 
 }
