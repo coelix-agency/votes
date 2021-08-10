@@ -60,7 +60,8 @@
           }
         }
 
-        [type="radio"] {
+        [type="radio"],
+        [type="checkbox"] {
 
           + .items__item-image {
             &::after {
@@ -118,7 +119,8 @@
       font-weight: 300;
     }
 
-    [type="radio"] {
+    [type="radio"],
+    [type="checkbox"]{
       position: absolute;
       left: -9999px;
       opacity: 0;
