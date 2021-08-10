@@ -1,0 +1,33 @@
+.screen {
+
+  &__4 {
+    background-color: #f9ecd5;
+
+    .screen__image {
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__inner {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      z-index: 10;
+      padding: 70% 0 0 0;
+    }
+
+    &-toptext {
+      position: absolute;
+      left: 50%;
+      top: 24px;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+
+  }
+
+}

@@ -1,0 +1,39 @@
+.screen {
+
+  &__3 {
+
+    &__inner {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      top: 40%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: $offset;
+      right: $offset;
+
+    }
+
+    &-text {
+      display: block;
+      max-width: 260px;
+      margin: 0 auto;
+      padding: 12px 0 0 0;
+
+      p {
+        font-size: 26px;
+        line-height: 1.4;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  }
+
+}
