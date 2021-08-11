@@ -65,9 +65,12 @@
       }
     }
 
-
     .shadow {
       box-shadow: 7px 7px 30px 0px rgba(50, 50, 50, 0.45);
+    }
+
+    [disabled="disabled"] {
+      opacity: .25;
     }
   }
 

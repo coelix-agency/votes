@@ -20,19 +20,7 @@ jQuery( function( $ ) {
              * Screens Action
              */
             this.screen_1  = this.screen_1( this );
-
-            // /**
-            //  * Click
-            //  * Start
-            //  */
-            // $( document ).on(
-            //     'click',
-            //     '.votesStart',
-            //     this.screen_1 );
-
-
-
-
+            this.screen_wizard  = this.screen_wizard( this );
 
         },
 
@@ -60,10 +48,39 @@ jQuery( function( $ ) {
 
         },
 
+        /**
+         * Wizard
+         */
+        screen_wizard: function() {
 
+            $( '#wizard' ).wizard({
+                animations: {
+                    show: {
+                        options: {
+                            duration: 200
+                        },
+                        properties: {
+                            opacity: "show"
+                        }
+                    },
+                    hide: {
+                        options: {
+                            duration: 0
+                        },
+                        properties: {
+                            opacity: "hide"
+                        }
+                    }
+                },
+                beforeBackward: function( event, state ) {
 
+                },
+                beforeForward: function( event, state ) {
 
+                }
+            })
 
+        },
 
     };
 
