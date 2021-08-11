@@ -22,6 +22,11 @@ jQuery( function( $ ) {
             this.screen_1  = this.screen_1( this );
             this.screen_wizard  = this.screen_wizard( this );
 
+            $( document ).on(
+                'click',
+                '#submit',
+                this.submit );
+
         },
 
         /**
@@ -72,6 +77,7 @@ jQuery( function( $ ) {
                         }
                     }
                 },
+                enableSubmit: true,
                 beforeBackward: function( event, state ) {
 
                 },
@@ -79,6 +85,12 @@ jQuery( function( $ ) {
 
                 }
             })
+
+        },
+
+        submit: function() {
+
+            $('.wizard__form').trigger('submit');
 
         },
 
