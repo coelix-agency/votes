@@ -2,6 +2,39 @@
 
   &__15 {
 
+    .screen__4__inner {
+      padding-top: 58%;
+    }
+
+    &-content {
+      padding: 0 31px;
+      position: relative;
+
+      &-inner {
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        right: 40px;
+        z-index: 6;
+      }
+    }
+
+    .items {}
+
+    &-image {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer {
+      padding-top: 0;
+    }
+
+    .items__item-title {
+      line-height: 1.1;
+      font-size: 14px;
+    }
+
 
 
   }
