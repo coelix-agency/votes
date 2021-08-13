@@ -1,0 +1,14 @@
+.screen {
+
+  &__14 {
+
+    .footer {
+      $padd: 60px;
+
+      padding-left: $padd;
+      padding-right: $padd;
+    }
+
+  }
+
+}
